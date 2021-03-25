@@ -1,0 +1,34 @@
+[
+  {
+    "id": 1,
+    "Name": "onion"
+  },
+  {
+    "id": 2,
+    "Name": "bellpepper"
+  },
+  {
+    "id": 3,
+    "Name": "apple"
+  },
+  {
+    "id": 4,
+    "Name": "strawberry"
+  },
+  {
+    "id": 5,
+    "Name": "pickle"
+  },
+  {
+    "id": 6,
+    "Name": "pepper"
+  },
+  {
+    "id": 7,
+    "Name": "chicken"
+  },
+  {
+    "id": 8,
+    "Name": "beef"
+  }
+]

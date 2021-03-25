@@ -1,24 +1,23 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import { BrowserRouter } from "react-router-dom";
+import Navigation from "./components/Navigation";
+import Router from "./Router";
+import "./App.css";
+// import Axios from "axios";
+// import Recipes from "./components/Recipes";
+// import RecipeSearch from "./components/RecipeSearch";
+
+// const checkAuth = () => {
+//   const cookies = cookie.parse(document.cookie);
+//   return cookies["loggedIn"] ? true : false;
+// };
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BrowserRouter>
+      <Navigation></Navigation>
+      <Router></Router>
+    </BrowserRouter>
   );
 }
 
