@@ -42,21 +42,23 @@ const RecipeSearch = () => {
   };
 
   return (
-    <div className="App">
-      <h1>Food Search</h1>
-      <form className="search-form" onSubmit={onSubmit}>
-        <input
-          type="text"
-          placeholder="Search"
-          autoComplete="off"
-          onChange={onChange}
-          value={query}
-        ></input>
-        <input type="submit" value="search" />
-      </form>
-      <div className="recipes">
-        {recipes !== [] &&
-          recipes.map((recipe) => <Recipes key={uuidv4()} recipe={recipe} />)}
+    <div className="recipe-search-container">
+      <div className="App recipe-search">
+        <form className="search-form" onSubmit={onSubmit}>
+          <input
+            className="search-bar"
+            type="text"
+            placeholder="Enter Name of Recipe"
+            autoComplete="off"
+            onChange={onChange}
+            value={query}
+          ></input>
+          <input className="search-button" type="submit" value="search" />
+        </form>
+        <div className="recipes">
+          {recipes !== [] &&
+            recipes.map((recipe) => <Recipes key={uuidv4()} recipe={recipe} />)}
+        </div>
       </div>
     </div>
   );

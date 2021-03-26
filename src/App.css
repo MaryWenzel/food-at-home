@@ -1,6 +1,32 @@
+@import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap");
+
 .App {
-  min-height: 100vh;
-  background-image: linear-gradient(-20deg, #e9defa 0%, #fbfcdb 100%);
+  min-height: 99vh;
+  background-image: linear-gradient(to top, #ade7c2 0%, #e7fffe 100%);
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.food-at-home {
+  flex-grow: 3;
+  font-family: "Josefin Sans", sans-serif;
+  font-size: 45px;
+  letter-spacing: 10px;
+  font-weight: 800;
+}
+
+.nav-button {
+  margin-left: 10px;
+  background-color: #ade7c2;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+.recipe-search-container {
+  background-image: url(https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);
+}
+
+.recipe-search {
+  width: 80%;
+  margin: 0 auto;
 }
 
 .search-form {
@@ -11,20 +37,111 @@
 }
 
 .search-bar {
-  width: 50%;
+  width: 60%;
   border: none;
   padding: 10px;
+  font-size: 30px;
 }
 
 .search-button {
-  background: lightcoral;
+  background: #d794ac;
   border: none;
   padding: 10px 20px;
   color: white;
+  margin-left: 1em;
+  font-size: 30px;
+}
+
+.fav-icon {
+  font-size: 40px;
+  text-align: right;
+  margin-top: -20px;
+  color: #d794ac;
 }
 
 .recipes {
+  width: 100%;
   display: flex;
-  justify-content: space-around;
+  align-items: center;
   flex-wrap: wrap;
+  justify-content: center;
+  align-items: flex-start;
+}
+
+.recipe {
+  width: 20rem;
+  margin: 3rem;
+  display: flex;
+  flex-direction: column;
+  background-color: #e9e9e9;
+  padding: 2rem;
+  position: relative;
+  border-radius: 0.5rem;
+  box-shadow: 2rem 3rem 5rem #aaa;
+}
+
+.recipe h1 {
+  background-color: rgba(161, 161, 161, 0.7);
+  border-radius: 0.5rem;
+  padding: 0.3rem 0.5rem;
+  position: absolute;
+  top: 2.5rem;
+  left: 2.5rem;
+  right: 2.5rem;
+  font-size: 2.5rem;
+  font-weight: 400;
+  text-shadow: 0 0.5rem 0.5rem #555;
+  color: #fff;
+}
+
+.recipe img {
+  border-radius: 0.5rem;
+  object-fit: cover;
+}
+
+.recipe a {
+  font-size: 1.8rem;
+  color: #40b48e;
+}
+
+.recipe button {
+  font-size: 2rem;
+  text-transform: uppercase;
+  font-family: "Josefin Sans", sans-serif;
+  color: rgba(51, 51, 51, 0.753);
+  background-color: #ade7c2;
+  border: none;
+  border-radius: 0.5rem;
+  height: 3rem;
+}
+
+.ingredient-list {
+  margin-top: 1rem;
+  background-color: #f0f0f0;
+  border-radius: 0.5rem;
+  padding: 0.5rem;
+}
+
+.ingredient-list li {
+  margin: 0.5rem 0;
+}
+
+.ingredient-container {
+  background-image: url(https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=2089&q=80);
+}
+
+.ingredients {
+  height: 90vh;
+  width: 50%;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-image: linear-gradient(to top, #ade7c2 0%, #e7fffe 100%);
+}
+
+.ingredients h1 {
+  margin-top: -120px;
+  font-family: "Josefin Sans", sans-serif;
 }

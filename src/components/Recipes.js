@@ -17,10 +17,10 @@ function Recipes({ recipe }) {
   return (
     <div className="recipe">
       <h1>{label}</h1>
-      <div onClick={favIcon}>
+      <div className="fav-icon" onClick={favIcon}>
         {favorite === false ? <HiOutlineHeart /> : <HiHeart />}
       </div>
-      <p>Calories-{calories}</p>
+      {/* <p>Calories-{calories}</p> */}
       <img src={image} alt={label} />
       <a href={url} target="_blank" rel="noopener noreferrer">
         URL
