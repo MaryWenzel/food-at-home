@@ -4,6 +4,10 @@ import { Link } from "react-router-dom";
 import { makeStyles } from "@material-ui/core/styles";
 
 const useStyles = makeStyles((theme) => ({
+  button: {
+    marginLeft: "50px",
+    backgroundColor: "#ade7c2",
+  },
   link: {
     textDecoration: "none",
   },
@@ -27,17 +31,17 @@ const Navigation = () => {
           Food-@-Home
         </Typography>
         <div className="nav-buttons">
-          <Button className="nav-button" variant="contained" size="large">
+          <Button className={classes.button} variant="contained" size="large">
             <Link className={classes.link} to="/search">
               Recipe Search
             </Link>
           </Button>
-          <Button className="nav-button" variant="contained" size="large">
+          <Button className={classes.button} variant="contained" size="large">
             <Link className={classes.link} to="/ingredients">
               Ingredient Search
             </Link>
           </Button>
-          <Button className="nav-button" variant="contained" size="large">
+          <Button className={classes.button} variant="contained" size="large">
             <Link className={classes.link} to="/login">
               Login
             </Link>

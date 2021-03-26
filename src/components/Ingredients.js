@@ -48,6 +48,15 @@ export default function Ingredients() {
     "Rice",
     "Paprika",
     "Garlic",
+    "Lemon",
+    "Cheese",
+    "Pasta",
+    "Tuna",
+    "Cumin",
+    "Sugar",
+    "Milk",
+    "Olive Oil",
+    "Couscous",
   ]);
   const [right, setRight] = React.useState([]);
 

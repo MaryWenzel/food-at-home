@@ -14,8 +14,8 @@
   font-weight: 800;
 }
 
-.nav-button {
-  margin-left: 10px;
+.button {
+  margin-left: 50px;
   background-color: #ade7c2;
   font-family: "Josefin Sans", sans-serif;
 }
@@ -26,6 +26,7 @@
 
 .recipe-search {
   width: 80%;
+  overflow: hidden;
   margin: 0 auto;
 }
 

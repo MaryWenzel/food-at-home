@@ -6,7 +6,7 @@ import { HiOutlineHeart, HiHeart } from "react-icons/hi";
 function Recipes({ recipe }) {
   const [show, setShow] = useState(false);
   const [favorite, setFavorite] = useState(false);
-  const { label, calories, url, image, ingredients } = recipe.recipe;
+  const { label, url, image, ingredients } = recipe.recipe;
 
   const favIcon = () => {
     if (favorite === true) {
@@ -23,7 +23,7 @@ function Recipes({ recipe }) {
       {/* <p>Calories-{calories}</p> */}
       <img src={image} alt={label} />
       <a href={url} target="_blank" rel="noopener noreferrer">
-        URL
+        Source
       </a>
       <button onClick={() => setShow(!show)}>ingredients</button>
       {show && <RecipeDetails ingredients={ingredients}></RecipeDetails>}
