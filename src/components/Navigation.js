@@ -15,6 +15,7 @@ const useStyles = makeStyles((theme) => ({
 
 const Navigation = () => {
   const classes = useStyles();
+
   return (
     <AppBar position="relative" style={{ backgroundColor: "#d794ac" }}>
       <Toolbar style={{ height: "10vh" }}>
