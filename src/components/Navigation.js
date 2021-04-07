@@ -47,6 +47,11 @@ const Navigation = () => {
               Login
             </Link>
           </Button>
+          <Button className={classes.button} variant="contained" size="large">
+            <Link className={classes.link} to="/signup">
+              Sign Up
+            </Link>
+          </Button>
 
           {/* <li className="nav-list-item">
               <Link to="/ingredients">Ingredient Search</Link>
