@@ -2,6 +2,8 @@ import React from "react";
 import { BrowserRouter } from "react-router-dom";
 import Navigation from "./components/Navigation";
 import Router from "./Router";
+// import { AuthProvider } from "./contexts/AuthContext";
+
 import "./App.css";
 // import Axios from "axios";
 // import Recipes from "./components/Recipes";

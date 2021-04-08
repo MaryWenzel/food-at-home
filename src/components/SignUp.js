@@ -1,4 +1,5 @@
 import React, { useRef } from "react";
+import { useAuth } from "../contexts/AuthContext";
 import Avatar from "@material-ui/core/Avatar";
 import Button from "@material-ui/core/Button";
 import CssBaseline from "@material-ui/core/CssBaseline";
@@ -34,6 +35,14 @@ export default function SignUp() {
   const classes = useStyles();
   const emailRef = useRef();
   const passwordRef = useRef();
+  //   const confirmPasswordRef = useRef();
+  const { signup, currentUser } = useAuth();
+
+  function handleSubmit(e) {
+    e.preventDefault();
+
+    signup(emailRef.current.value, passwordRef.current.value);
+  }
 
   return (
     <Container component="main" maxWidth="xs">
@@ -45,6 +54,8 @@ export default function SignUp() {
         <Typography component="h1" variant="h5">
           Sign up
         </Typography>
+
+        {JSON.stringify(currentUser)}
         <form className={classes.form} noValidate>
           <Grid container spacing={2}>
             <Grid item xs={12}>
@@ -68,10 +79,21 @@ export default function SignUp() {
                 label="Password"
                 type="password"
                 id="password"
-                autoComplete="current-password"
                 ref={passwordRef}
               />
             </Grid>
+            {/* <Grid item xs={12}>
+              <TextField
+                variant="outlined"
+                required
+                fullWidth
+                name="confirm-password"
+                label="Confirm Password"
+                type="password"
+                id="confirm-password"
+                ref={confirmPasswordRef}
+              />
+            </Grid> */}
           </Grid>
           <Button
             type="submit"
